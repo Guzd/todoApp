@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from "./components/Header"
 import ToDoList from "./components/ToDoList"
 import ToDoInput from "./components/ToDoInput"
 import './App.css';
@@ -19,7 +20,9 @@ class ToDoContainer extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
+        <Header />
+        <ToDoInput />
         <ToDoList todos={this.state.todos} />
       </div>
     )
