@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem ;
   margin-bottom: 1rem ;
 }
 
@@ -76,10 +77,18 @@ body {
 .todo-item-content {
   width: 80%;
   text-align: justify;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .todo-item-removeIcon {
   width: 20%;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 75%;
+  }
 }

@@ -17,6 +17,7 @@ class ToDoContainer extends Component {
   }
 
   addToDo(title) {
+
     const newTodo = {
       id: uuid(),
       title: title,

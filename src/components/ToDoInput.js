@@ -31,10 +31,11 @@ class ToDoInput extends Component {
     <input
      type="text"
      className="input-text"
-     placeholder="Add new todo..."
+     placeholder="Agrega una nueva tarea..."
      name="title"
      onChange={this.onChange}
      value={this.state.title}
+     required
     />
     <button type="submit" className="input-submit" value="Add" >
      <img src={addIcon} style={{ width: '30px' }} alt="addIcon" />
