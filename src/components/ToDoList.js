@@ -9,8 +9,8 @@ class TodosList extends React.Component {
      <h2>ToDo list</h2>
      <img src={deleteAllLogo} style={{ width: '30px' }} alt="delete all" />
     </div>
-    {this.props.todos.map(todo => (
-     <ToDoItem todo={todo} />
+    {this.props.todos.map((todo, index) => (
+     <ToDoItem todo={todo} key={index} />
     ))}
    </div>
   )

@@ -17,12 +17,23 @@ class ToDoContainer extends Component {
         }
       ]
     }
+    this.addToDo = this.addToDo.bind(this)
   }
+
+  addToDo(title) {
+    const newTodo = {
+      title: title,
+    };
+    this.setState({
+      todos: [...this.state.todos, newTodo]
+    });
+  }
+
   render() {
     return (
       <div className="container">
         <Header />
-        <ToDoInput />
+        <ToDoInput addToDo={this.addToDo} />
         <ToDoList todos={this.state.todos} />
       </div>
     )
