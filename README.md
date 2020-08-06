@@ -1,5 +1,5 @@
 # ToDo app
-This basic ToDo app developed with ReactJ. 
+This basic ToDo app was developed with ReactJ. 
 
 ## Demo
 
