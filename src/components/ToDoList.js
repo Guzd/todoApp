@@ -6,8 +6,7 @@ class TodosList extends React.Component {
   let content
   if (this.props.todos.length === 0) {
    content =
-    <h3 className="todo-list-notTodo">No hay ToDo's, toma un café!
-    <i className="fas fa-mug-hot"></i>
+    <h3 className="todo-list-notTodo">No hay ToDo's, tómate un café! - <i className="fas fa-mug-hot"></i>
     </h3>
   } else {
    content = this.props.todos.map((todo, index) => (
